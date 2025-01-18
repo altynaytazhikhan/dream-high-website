@@ -1,15 +1,16 @@
-/* Общие настройки */
-* {
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    line-height: 1.6;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 a {
@@ -17,124 +18,114 @@ a {
     color: inherit;
 }
 
-ul {
-    list-style-type: none;
-}
-
-/* Заголовок и навигация */
+/* Шапка */
 header {
     background-color: #004D99;
-    padding: 20px;
-    text-align: center;
+    padding: 20px 0;
 }
 
-header nav ul {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #555;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Форма поиска */
+.search-bar {
+    background-color: #fff;
+    padding: 20px 0;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar form {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-header nav a {
-    color: white;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-header nav a:hover {
-    background-color: #003366;
-}
-
-/* Основной контент */
-main {
-    padding: 40px 10%;
-}
-
-#hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 80px 0;
-}
-
-#hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-/* Секция возможностей */
-#opportunities {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.opportunity {
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.opportunity:hover {
-    transform: translateY(-10px);
-}
-
-.opportunity h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.opportunity p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.opportunity a {
-    display: inline-block;
-    background-color: #004D99;
-    color: white;
-    padding: 10px 20px;
+.search-bar select,
+.search-bar button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    font-size: 16px;
 }
 
-.opportunity a:hover {
+.search-bar button {
+    background-color: #004D99;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
     background-color: #003366;
 }
 
-/* Подвал */
-footer {
-    background-color: #004D99;
-    color: white;
+/* Карточки */
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.opportunity-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-footer p {
-    font-size: 1rem;
-}
-
-/* Мобильные устройства */
-@media screen and (max-width: 768px) {
-    main {
-        padding: 40px 5%;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
+.opportunity-card .image-placeholder {
+    width: 100%;
+    height: 150px;
+    background
