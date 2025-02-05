@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream High</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Навигация -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">DREAM HIGH</h1>
+            <nav class="space-x-4">
+                <a href="#" class="text-gray-700 hover:text-blue-600">Стипендии</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Конкурсы</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Онлайн-курсы</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Другие возможности</a>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Войти</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Блок с изображением (Хиро-секция) -->
+    <section class="relative text-center text-white">
+        <img src="https://source.unsplash.com/1600x700/?mountains" alt="Dream High" class="w-full h-[500px] object-cover">
+        <div class="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
+            <h2 class="text-5xl font-bold">Dream High</h2>
+            <p class="text-2xl mt-2">Мечтай высоко, достигай ещё выше</p>
+        </div>
+    </section>
+
+    <!-- Фильтр -->
+    <section class="container mx-auto mt-6 p-4 bg-white rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-center mb-4">Выберите подходящую для вас возможность</h3>
+        <div class="flex justify-center space-x-4">
+            <select class="border p-2 rounded-lg">
+                <option>Выберите категорию</option>
+                <option>Стипендии</option>
+                <option>Конкурсы</option>
+            </select>
+            <select class="border p-2 rounded-lg">
+                <option>Страна</option>
+                <option>Китай</option>
+                <option>США</option>
+            </select>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-lg">Искать</button>
+        </div>
+    </section>
+
+    <!-- Трендовые возможности -->
+    <section class="container mx-auto mt-6">
+        <h3 class="text-2xl font-semibold text-center">Трендовые возможности</h3>
+        <div class="grid grid-cols-3 gap-6 mt-4">
+            <!-- 6 карточек -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Китайская гос. стипендия 2025/26</h4>
+                <p class="text-gray-600">Пекинский технологический институт</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Ноябрь 5</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Стипендия Erasmus в Европе</h4>
+                <p class="text-gray-600">Различные университеты</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Декабрь 12</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Программа обмена в Японии</h4>
+                <p class="text-gray-600">Токийский университет</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Январь 20</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Конкурс стартапов</h4>
+                <p class="text-gray-600">Силиконовая долина</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Февраль 10</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Стажировка в Microsoft</h4>
+                <p class="text-gray-600">США, удалённо</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Март 5</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Грант на исследовательскую работу</h4>
+                <p class="text-gray-600">Кембридж</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Апрель 1</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- Кнопка публикации -->
+     <div class="container mx-auto text-center mt-6">
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg">Опубликуйте свой проект бесплатно</button>
+    </div>
+
+    <!-- Последние возможности -->
+    <section class="container mx-auto mt-6">
+        <h3 class="text-2xl font-semibold text-center">Последние возможности</h3>
+        <div class="grid grid-cols-3 gap-6 mt-4">
+            <!-- 6 карточек -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Грант на обучение в Европе</h4>
+                <p class="text-gray-600">Университет Амстердама</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Декабрь 10</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Программа обмена в Японии</h4>
+                <p class="text-gray-600">Токийский университет</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Январь 15</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Конкурс стартапов</h4>
+                <p class="text-gray-600">Силиконовая долина</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Февраль 20</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Стажировка в Google</h4>
+                <p class="text-gray-600">США, удалённо</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Март 8</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="h-52 bg-gray-300"></div>
+                <h4 class="mt-2 text-lg font-bold">Летняя школа в Германии</h4>
+                <p class="text-gray-600">Берлин</p>
+                <p class="text-sm text-gray-500 mt-1">📅 Май 15</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кнопка публикации -->
+    <div class="container mx-auto text-center mt-6">
+        <button class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg">Опубликуйте свой проект бесплатно</button>
+    </div>
+
+ <!-- Футер -->
+ <footer class="bg-gray-900 text-white mt-12 p-6">
+    <div class="container mx-auto flex justify-between">
+        <div>
+            <h3 class="text-xl font-bold">Dream High</h3>
+            <p class="text-gray-400">Мы помогаем мечтам становиться реальностью.</p>
+            <p class="text-gray-500 text-sm">© 2025 Dream High</p>
+        </div>
+        <div>
+            <h4 class="font-semibold">Разделы сайта</h4>
+            <ul class="text-gray-400">
+                <li>Стипендии</li>
+                <li>Конференции</li>
+                <li>Конкурсы</li>
+                <li>Онлайн курсы</li>
+                <li>Политика конфиденциальности</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-semibold">Контакты</h4>
+            <p class="text-gray-400">Email: your-email@example.com</p>
+            <p class="text-gray-400">Реклама и партнёрство</p>
+        </div>
+        <div>
+            <h4 class="font-semibold">Оставайтесь на связи</h4>
+            <div class="flex space-x-2 mt-2">
+                <span class="bg-gray-700 p-2 rounded-full">📱</span>
+                <span class="bg-gray-700 p-2 rounded-full">✉️</span>
+                <span class="bg-gray-700 p-2 rounded-full">🎵</span>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
