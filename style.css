@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 
 nav{
     background: white;
@@ -77,8 +81,9 @@ nav ul li a  {
     transition: 0.3s;
 }
 
-a:hover{
+nav ul li a:hover {
     background: #2C2E83;
+    color: white;
     transition: .5s;
 }
 
@@ -113,7 +118,7 @@ a:hover{
     .checkbtn{
         display: block;
     }
-    ul{
+    nav ul{
         position:fixed;
         width: 100%;
         height: 100vh;
@@ -131,7 +136,7 @@ a:hover{
     nav ul li a{
         font-size: 20px;
     }
-    a:hover,a.active{
+    nav ul li a:hover, nav ul li a.active {
         background: none;
         color: #0082e6;
     }
@@ -216,6 +221,29 @@ section{
 }
 
 
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .hero-content {
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 60px;  /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 18px;  /* Adjusted font size */
+    }
+}
+
+
+
 
 .sorting-section {
     text-align: center;
@@ -230,9 +258,9 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center the contents */
-    width: 60%; /* Adjust width as needed */
+    width: 80%; 
     height: auto;
-    margin: 20px auto; /* Center it horizontally */
+    margin: 0 auto; /* Center it horizontally */
     padding: 20px 10px; /* Control internal spacing */
     border: 3px solid #2C2E83; /* Border color */
     border-radius: 90px; /* Makes the shape oval */
@@ -274,7 +302,7 @@ select {
 }
 
 .sorting-form select {
-    margin-right: 10px; 
+    margin-right: 10px; /* Optional: space between select elements */
 }
 
 /* Hover effect */
