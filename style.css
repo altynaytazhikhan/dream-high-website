@@ -11,7 +11,6 @@ nav{
     background: white;
     height: 60px;
     width: 95%;
-    /* these are changes chatgpt recomendations */
     margin: 10px auto 0 auto;
     border-radius: 50px;
     display: flex;
@@ -21,8 +20,7 @@ nav{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 10;
-    font-family: 'TeX Gyre Adventor', sans-serif !important;
-    /* here chatgpt recomandations finish */
+    font-family: 'TeX Gyre Adventor', sans-serif !important; 
 }
 
 
@@ -33,16 +31,16 @@ nav{
 }
 
 .logo img {
-    height: 50px; /* Adjust as needed */
+    height: 50px; 
     width: auto;
-    max-width: 150px; /* Prevents too large logos */
+    max-width: 150px;
 }
 
 .logo-text {
     font-family: 'TeXGyreAdventor', sans-serif;
-    font-size: 20px; /* Adjust as needed */
+    font-size: 20px; 
     font-weight: bold;
-    color: black; /* Change color if needed */
+    color: black; /
 }
 
 nav ul{
@@ -66,7 +64,7 @@ nav ul li a  {
 }
 
 
-.menu.button{ /* these are chatgpt recomendations */
+.menu.button{ 
     display: inline-block;
     background: #2C2E83;
     color: white;
@@ -150,8 +148,6 @@ section{
 }
 
 
-/* chat gpt example */
-
 @font-face {
     font-family: 'TeX Gyre Adventor';
     src: url('tex-gyre-adventor.zip') format('opentype');
@@ -169,7 +165,7 @@ section{
     text-align: center;
     position: relative;
     border-radius: 0;
-    margin: -70px auto 0 auto; /* Center it */
+    margin: -70px auto 0 auto; 
 }
 
 .hero::before {
@@ -219,8 +215,6 @@ section{
     background: #2C2E83;
 }
 
-
-/* chat gpt example finishes */
 
 
 .sorting-section {
@@ -280,7 +274,7 @@ select {
 }
 
 .sorting-form select {
-    margin-right: 10px; /* Optional: space between select elements */
+    margin-right: 10px; 
 }
 
 /* Hover effect */
