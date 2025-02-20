@@ -45,8 +45,6 @@ nav{
     color: black; /* Change color if needed */
 }
 
-<span class="logo-text">Dream High</span>
-
 nav ul{
     float: right;
     margin-right: 20px;
@@ -264,6 +262,7 @@ select, .search-btn {
     background: white;
     outline: none; /* Remove focus outline */
     cursor: pointer;
+}
 
 select {
     width: 200px; /* Adjust the width as needed */
@@ -295,6 +294,7 @@ select {
         width: 90%; /* Make it more compact on small screens */
         padding: 20px 10px; /* Reduce padding */
     }
+}
 
 
 main {
