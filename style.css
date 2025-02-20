@@ -1,14 +1,12 @@
 *{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+
 
 
 nav{
@@ -25,6 +23,7 @@ nav{
     position: relative;
     z-index: 10;
     font-family: 'TeX Gyre Adventor', sans-serif !important; 
+    box-sizing: border-box;
 }
 
 
@@ -322,6 +321,7 @@ select {
 main {
     text-align: center;
     padding: 20px;
+    margin: 0 auto;
 }
 
 form {
