@@ -7,8 +7,6 @@
 }
 
 
-
-
 nav{
     background: white;
     height: 60px;
@@ -252,20 +250,7 @@ section{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.sorting-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center the contents */
-    width: 80%; 
-    height: auto;
-    margin: 0 auto; /* Center it horizontally */
-    padding: 20px 10px; /* Control internal spacing */
-    border: 3px solid #2C2E83; /* Border color */
-    border-radius: 90px; /* Makes the shape oval */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
-    background: white; /* Background color */
-}
+
 
 .sorting-form {
     display: flex;
