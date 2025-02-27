@@ -335,15 +335,6 @@ section ul li {
     border-radius: 5px;
 }
 
-footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
 
-footer nav ul, footer section ul {
-    list-style: none;
-    padding: 0;
-}
+
+<!-- Футер -->
