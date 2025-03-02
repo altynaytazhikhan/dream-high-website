@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css2?family=Moderustic&display=swap);
+*{
+  margin: 0 ;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'TeX Gyre Adventor', sans-serif !important;
+    background: #ffffff;
+
+}
+
+nav{
+  background: white;
+  height: 60px;
+  width: 95%;
+  display: flex; /*GPT*/
+  justify-content: space-between; /* Ensures logo left, button right */
+  padding: 0 20px; /* Adjust spacing */
+  position: relative; /* Needed for absolute positioning of .checkbtn */
+  margin: 10px auto 0 auto; /* change to DH style */
+  border-radius: 50px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(199, 199, 199);
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+  height: 50px; 
+  width: auto;
+  max-width: 150px;
+}
+
+.logo-text {
+  font-family: 'TeX Gyre Adventor', sans-serif !important; 
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 0, 0); 
+  text-transform: uppercase;
+}
+
+.menu-list{
+  display: flex; /* GPT */
+  align-items: center; /* GPT */
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+}
+
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 5px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  
+}
+
+a.active, a:hover{
+  background: #2C2E83;
+  transition: .5s;
+  color: white;
+}
+
+/* HAMBURGER MENU */
+
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none; /* GPT */
+  right: 20px; /* GPT */
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-right: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+}
+}
+
+@media (max-width: 858px){
+.menu-list{  /* GPT */
+  flex-direction: column; 
+  text-align: center;
+}
+
+
+  .checkbtn{
+    display: block;
+  }
+
+ ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #2c3e50;
+  top: 80px;
+  right:-100%;
+  text-align: center;
+  transition: all .5s;
+  gap: 20px; /* Reduce space between items */
+
+ }
+ nav ul li{
+  display: block;
+  margin: 20px 0;
+  line-height: 40px;
+ }
+ nav ul li a{
+  font-size: 20px;
+  color: white;
+
+ }
+ a:hover, a:active{
+  background: none;
+  color: aqua;
+ }
+ #check:checked ~ ul {
+  right: 0;
+
+}
