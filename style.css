@@ -344,16 +344,23 @@ section ul li {
     src: url(dream-high-website/fonts/tex-gyre-adventor/texgyreadventor-regular.otf);
 }
 
-/* footer{
-    height: 200cap;
-} */
+footer{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 
 footer section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
-    height: 30cap;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 100%;
+    width: 100vw;
+    min-height: 30vh;
+    height: auto;
     background-color: #3d484e;
     color: white;
     font-family: 'regular', sans-serif;
@@ -387,10 +394,28 @@ img{
 }
 
 .footer-dh .footer-p{
-    margin-bottom: 50px;
+    gap: 2rem;
 }
 
 .footer-ul{
     display: flex;
     gap: 10%;
+}
+
+.footer-logo{
+    display: flex;
+    gap: 2rem;
+    align-items: center; /* Центрируем логотип */
+    justify-content: flex-end; /* Прижимаем вниз */
+}
+
+@media (max-width: 1270px){
+    .footer-logo{
+        display: flex;
+        align-items: end;
+    }
+    .footer-ul{
+        display: flex;
+        flex-direction: column;
+    }
 }
