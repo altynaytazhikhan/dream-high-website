@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Публикация проекта – Dream High</title>
+    
+    <style>
+        /* Общий стиль для всей страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #222;
+        }
 
+        /* Контейнер для контента */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Стили заголовков */
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #222;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #444;
+            margin-top: 20px;
+        }
+
+        /* Стили для списков */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Стили ссылок */
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Стили футера */
+        footer {
+            background-color: #2d2d2d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Контейнер футера */
+        .footer-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Ошибка загрузки футера */
+        .error {
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Стили для списка */
+        ol {
+            padding-left: 20px; /* Отступ слева для нумерованных списков */
+        }
+
+        ol li {
+            margin-bottom: 15px; /* Расстояние между пунктами списка */
+            font-size: 18px; /* Размер шрифта */
+            line-height: 1.6; /* Межстрочный интервал */
+        }
+
+        ul {
+            padding-left: 25px; /* Отступ слева для маркеров */
+        }
+
+        ul li {
+            list-style-type: disc; /* Черные точки */
+            margin-bottom: 8px; /* Расстояние между подпунктами */
+            font-size: 16px; /* Размер шрифта */
+            line-height: 1.5; /* Межстрочный интервал */
+        }
+
+        /* Медиа-запрос для мобильных устройств */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Подключаем меню -->
+    <div id="menu-container"></div>
+
+    <main class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Главная</a> /
+            <span>Публикация вашего проекта</span>
+        </nav>
+
+        <h1>Публикация вашего проекта на сайте</h1>
+
+        <div class="info-box">
+            <p>Мы публикуем различные возможности, включая волонтерские проекты, конкурсы, хакатоны, стипендии, программы обучения и другие полезные инициативы для молодежи.</p>
+        </div>
+
+        <h2>Какую информацию необходимо предоставить?</h2>
+
+        <p>Чтобы мы могли опубликовать ваш проект, подготовьте документ в формате <b>Word</b>, который включает:</p>
+
+        <ol>
+            <li>
+                <b>1. Общее представление вашего проекта:</b>
+                <ul>
+                    <li>Название проекта.</li>
+                    <li>Краткое описание инициативы (что это за проект, его суть).</li>
+                    <li>Основная цель проекта (чего вы хотите достичь).</li>
+                </ul>
+            </li>
+            <li>
+                <b>2. Преимущества для участников:</b>
+                <ul>
+                    <li>Что участники получат от участия (например, опыт, награды, возможность наладить контакты).</li>
+                </ul>
+            </li>
+            <li>
+                <b>3. Требования к участникам:</b>
+                <ul>
+                    <li>Кого вы ищете? (например, возраст, страна, образование, навыки).</li>
+                </ul>
+            </li>
+            <li>
+                <b>4. Дедлайн:</b>
+                <ul>
+                    <li>Последняя дата для подачи заявки.</li>
+                </ul>
+            </li>
+            <li>
+                <b>5. Изображение:</b>
+                <ul>
+                    <li>Прикрепите качественное изображение, связанное с проектом (логотип, баннер или иллюстрация).</li>
+                </ul>
+            </li>
+            <li>
+                <b>6. Ссылка на проект:</b>
+                <ul>
+                    <li>Укажите ссылку на официальный сайт или платформу, где участники могут подать заявку или узнать больше.</li>
+                </ul>
+            </li>
+            <li>
+                <b>7. Формат подачи:</b>
+                <ul>
+                    <li>Четко укажите, как участники должны подать заявку (например, через форму на сайте, по email).</li>
+                </ul>
+            </li>
+            <li>
+                <b>8. Контакты:</b>
+                <ul>
+                    <li>Оставьте контакты для пользователей, заинтересованных в проекте.</li>
+                    <li>Контактный ник в Telegram или Instagram.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Куда отправлять информацию?</h2>
+       <ul>
+        <li>Отправьте ваш документ Word с вложенными изображениями на наш email: <b>[вставить email]</b>.</li>
+        <li>Мы рассмотрим вашу заявку и свяжемся с вами.</li>
+       </ul>
+    </main>
+
+    <!-- Подключаем футер -->
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+
+    <script>
+        // Подключаем меню и футер
+        fetch("menu.html").then(res => res.text()).then(data => document.getElementById("menu-container").innerHTML = data);
+        fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer-container").innerHTML = data);
+    </script>
+
+</body>
+</html>
